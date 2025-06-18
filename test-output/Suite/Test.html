@@ -1,0 +1,119 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jun 18 16:57:00 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>31 seconds (31085 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='commonFunctions.PriceFilter.priceFilter()'><b>priceFilter</b><br>Test class: commonFunctions.PriceFilter<br/>
+<a href="#Output-295055909" onClick='toggleBox("Output-295055909", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-295055909" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-295055909">
+Price filter now applied Successfully; minimum price is 2000/-<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>commonFunctions.PriceFilter@1e66f1f5</td></tr>
+<tr>
+<td title='commonFunctions.BrandFilter.brandFilter()'><b>brandFilter</b><br>Test class: commonFunctions.BrandFilter</td>
+<td></td>
+<td>15</td>
+<td>commonFunctions.BrandFilter@79d8407f</td></tr>
+<tr>
+<td title='testRunner.Runner.kickStart()'><b>kickStart</b><br>Test class: testRunner.Runner</td>
+<td></td>
+<td>0</td>
+<td>testRunner.Runner@ba2f4ec</td></tr>
+<tr>
+<td title='commonFunctions.SearchProduct.searchProduct()'><b>searchProduct</b><br>Test class: commonFunctions.SearchProduct</td>
+<td></td>
+<td>3</td>
+<td>commonFunctions.SearchProduct@3c3d9b6b</td></tr>
+<tr>
+<td title='commonFunctions.RatingFilter.ratingFilter()'><b>ratingFilter</b><br>Test class: commonFunctions.RatingFilter<br/>
+<a href="#Output-452457802" onClick='toggleBox("Output-452457802", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-452457802" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-452457802">
+Rating filter (above 4 stars) applied successfully.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>commonFunctions.RatingFilter@5fbe4146</td></tr>
+</table><p>
+</body>
+</html>

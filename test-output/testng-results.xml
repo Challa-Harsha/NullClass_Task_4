@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Valid ::signin   https://www.amazon.in/?ref_=nav_ya_signin]]>
+    </line>
+    <line>
+      <![CDATA[Rating filter (above 4 stars) applied successfully.]]>
+    </line>
+    <line>
+      <![CDATA[Price filter now applied Successfully; minimum price is 2000/-]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2025-06-18T16:57:00 IST" name="Suite" finished-at="2025-06-18T16:57:31 IST" duration-ms="31085">
+    <groups>
+    </groups>
+    <test started-at="2025-06-18T16:57:00 IST" name="Test" finished-at="2025-06-18T16:57:31 IST" duration-ms="31085">
+      <class name="commonFunctions.SearchProduct">
+        <test-method is-config="true" signature="setup()[pri:0, instance:commonFunctions.SearchProduct@3c3d9b6b]" started-at="2025-06-18T16:57:00 IST" name="setup" finished-at="2025-06-18T16:57:09 IST" duration-ms="8797" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Valid ::signin   https://www.amazon.in/?ref_=nav_ya_signin]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="Search()[pri:0, instance:commonFunctions.SearchProduct@3c3d9b6b]" started-at="2025-06-18T16:57:09 IST" name="Search" finished-at="2025-06-18T16:57:09 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search -->
+        <test-method signature="searchProduct()[pri:0, instance:commonFunctions.SearchProduct@3c3d9b6b]" started-at="2025-06-18T16:57:09 IST" name="searchProduct" finished-at="2025-06-18T16:57:12 IST" duration-ms="3179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProduct -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:commonFunctions.SearchProduct@3c3d9b6b]" started-at="2025-06-18T16:57:31 IST" name="teardown" finished-at="2025-06-18T16:57:31 IST" duration-ms="330" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- commonFunctions.SearchProduct -->
+      <class name="commonFunctions.RatingFilter">
+        <test-method signature="ratingFilter()[pri:3, instance:commonFunctions.RatingFilter@5fbe4146]" started-at="2025-06-18T16:57:28 IST" name="ratingFilter" finished-at="2025-06-18T16:57:29 IST" duration-ms="926" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Rating filter (above 4 stars) applied successfully.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ratingFilter -->
+        <test-method is-config="true" signature="Search()[pri:0, instance:commonFunctions.RatingFilter@5fbe4146]" started-at="2025-06-18T16:57:28 IST" name="Search" finished-at="2025-06-18T16:57:28 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search -->
+      </class> <!-- commonFunctions.RatingFilter -->
+      <class name="commonFunctions.PriceFilter">
+        <test-method is-config="true" signature="Search()[pri:0, instance:commonFunctions.PriceFilter@1e66f1f5]" started-at="2025-06-18T16:57:29 IST" name="Search" finished-at="2025-06-18T16:57:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search -->
+        <test-method signature="priceFilter()[pri:2, instance:commonFunctions.PriceFilter@1e66f1f5]" started-at="2025-06-18T16:57:29 IST" name="priceFilter" finished-at="2025-06-18T16:57:31 IST" duration-ms="2236" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Price filter now applied Successfully; minimum price is 2000/-]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- priceFilter -->
+      </class> <!-- commonFunctions.PriceFilter -->
+      <class name="commonFunctions.BrandFilter">
+        <test-method is-config="true" signature="Search()[pri:0, instance:commonFunctions.BrandFilter@79d8407f]" started-at="2025-06-18T16:57:12 IST" name="Search" finished-at="2025-06-18T16:57:12 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search -->
+        <test-method signature="brandFilter()[pri:1, instance:commonFunctions.BrandFilter@79d8407f]" started-at="2025-06-18T16:57:12 IST" name="brandFilter" finished-at="2025-06-18T16:57:28 IST" duration-ms="15542" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- brandFilter -->
+      </class> <!-- commonFunctions.BrandFilter -->
+      <class name="testRunner.Runner">
+        <test-method signature="kickStart()[pri:0, instance:testRunner.Runner@ba2f4ec]" started-at="2025-06-18T16:57:09 IST" name="kickStart" finished-at="2025-06-18T16:57:09 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- kickStart -->
+      </class> <!-- testRunner.Runner -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
