@@ -11,7 +11,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.PageFactory;
-import org.slf4j.helpers.Reporter;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
@@ -19,17 +18,16 @@ import org.testng.annotations.BeforeTest;
 import commonFunctions.Loginpage;
 
 public class AppUtil {
-	
+
 	public static WebDriver driver;
 	public static Properties conpro;
-	
+
 	@BeforeTest
 	public static void setup() throws Throwable {
 		conpro = new Properties();
-		conpro.load(new FileInputStream("D:\\Internship\\AmazonProject\\src\\main\\resources\\Environment.properties"));
-		
-		if(conpro.getProperty("Browser").equalsIgnoreCase("chrome"))
-		{
+		conpro.load(new FileInputStream("D:\\Internship\\Task_4\\src\\main\\resources\\Environment.properties"));
+
+		if (conpro.getProperty("Browser").equalsIgnoreCase("chrome")) {
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();
 			driver.get(conpro.getProperty("Url"));
@@ -37,10 +35,8 @@ public class AppUtil {
 			login.loginp("loyolite183616@gmail.com");
 			login.enterpwd("@Harsha630#");
 			login.validate();
-			
-		}
-		else if (conpro.getProperty("Browser").equalsIgnoreCase("firefox"))
-		{
+
+		} else if (conpro.getProperty("Browser").equalsIgnoreCase("firefox")) {
 			driver = new FirefoxDriver();
 			driver.manage().window().maximize();
 			driver.get(conpro.getProperty("Url"));
@@ -48,9 +44,7 @@ public class AppUtil {
 			login.loginp("loyolite183616@gmail.com");
 			login.enterpwd("@Harsha630#");
 			login.validate();
-		}
-		else if(conpro.getProperty("Browser").equalsIgnoreCase("edge"))
-		{
+		} else if (conpro.getProperty("Browser").equalsIgnoreCase("edge")) {
 			driver = new EdgeDriver();
 			driver.manage().window().maximize();
 			driver.get(conpro.getProperty("Url"));
@@ -58,13 +52,11 @@ public class AppUtil {
 			login.loginp("loyolite183616@gmail.com");
 			login.enterpwd("@Harsha630#");
 			login.validate();
-		}
-		else
-		{
+		} else {
 			org.testng.Reporter.log("Browser value is not matching");
 		}
 	}
-	
+
 	@BeforeClass
 	public void Search() {
 
@@ -77,11 +69,10 @@ public class AppUtil {
 			return;
 		}
 	}
+
 	@AfterTest
-	public static void teardown()
-	{
+	public static void teardown() {
 		driver.quit();
 	}
-	
 
 }

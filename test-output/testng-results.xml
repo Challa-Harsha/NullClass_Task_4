@@ -1,79 +1,232 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="2" failed="3" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Valid ::signin   https://www.amazon.in/?ref_=nav_ya_signin]]>
     </line>
     <line>
-      <![CDATA[Rating filter (above 4 stars) applied successfully.]]>
+      <![CDATA[Falied to apply rating filter.]]>
     </line>
     <line>
-      <![CDATA[Price filter now applied Successfully; minimum price is 2000/-]]>
+      <![CDATA[Failed to apply price filter.]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-06-18T16:57:00 IST" name="Suite" finished-at="2025-06-18T16:57:31 IST" duration-ms="31085">
+  <suite started-at="2025-06-18T17:25:23 IST" name="Suite" finished-at="2025-06-18T17:25:59 IST" duration-ms="36260">
     <groups>
     </groups>
-    <test started-at="2025-06-18T16:57:00 IST" name="Test" finished-at="2025-06-18T16:57:31 IST" duration-ms="31085">
+    <test started-at="2025-06-18T17:25:23 IST" name="Test" finished-at="2025-06-18T17:25:59 IST" duration-ms="36260">
       <class name="commonFunctions.SearchProduct">
-        <test-method is-config="true" signature="setup()[pri:0, instance:commonFunctions.SearchProduct@3c3d9b6b]" started-at="2025-06-18T16:57:00 IST" name="setup" finished-at="2025-06-18T16:57:09 IST" duration-ms="8797" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:commonFunctions.SearchProduct@3c3d9b6b]" started-at="2025-06-18T17:25:23 IST" name="setup" finished-at="2025-06-18T17:25:33 IST" duration-ms="10488" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Valid ::signin   https://www.amazon.in/?ref_=nav_ya_signin]]>
             </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="Search()[pri:0, instance:commonFunctions.SearchProduct@3c3d9b6b]" started-at="2025-06-18T16:57:09 IST" name="Search" finished-at="2025-06-18T16:57:09 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="Search()[pri:0, instance:commonFunctions.SearchProduct@3c3d9b6b]" started-at="2025-06-18T17:25:33 IST" name="Search" finished-at="2025-06-18T17:25:33 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Search -->
-        <test-method signature="searchProduct()[pri:0, instance:commonFunctions.SearchProduct@3c3d9b6b]" started-at="2025-06-18T16:57:09 IST" name="searchProduct" finished-at="2025-06-18T16:57:12 IST" duration-ms="3179" status="PASS">
+        <test-method signature="searchProduct()[pri:0, instance:commonFunctions.SearchProduct@3c3d9b6b]" started-at="2025-06-18T17:25:33 IST" name="searchProduct" finished-at="2025-06-18T17:25:38 IST" duration-ms="4033" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchProduct -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:commonFunctions.SearchProduct@3c3d9b6b]" started-at="2025-06-18T16:57:31 IST" name="teardown" finished-at="2025-06-18T16:57:31 IST" duration-ms="330" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:commonFunctions.SearchProduct@3c3d9b6b]" started-at="2025-06-18T17:25:59 IST" name="teardown" finished-at="2025-06-18T17:25:59 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- commonFunctions.SearchProduct -->
       <class name="commonFunctions.RatingFilter">
-        <test-method signature="ratingFilter()[pri:3, instance:commonFunctions.RatingFilter@5fbe4146]" started-at="2025-06-18T16:57:28 IST" name="ratingFilter" finished-at="2025-06-18T16:57:29 IST" duration-ms="926" status="PASS">
+        <test-method is-config="true" signature="Search()[pri:0, instance:commonFunctions.RatingFilter@5fbe4146]" started-at="2025-06-18T17:25:59 IST" name="Search" finished-at="2025-06-18T17:25:59 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search -->
+        <test-method signature="ratingFilter()[pri:3, instance:commonFunctions.RatingFilter@5fbe4146]" started-at="2025-06-18T17:25:59 IST" name="ratingFilter" finished-at="2025-06-18T17:25:59 IST" duration-ms="13" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Rating filter could not be applied: Error communicating with the remote browser. It may have died.
+Build info: version: '4.24.0', revision: '748ffc9bc3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4ceb3e6fff6dcdbf514cc1777f3b168f, findElement [using, value]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\MEGHALA\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50864}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50864/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4ceb3e6fff6dcdbf514cc1777f3b168f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Rating filter could not be applied: Error communicating with the remote browser. It may have died.
+Build info: version: '4.24.0', revision: '748ffc9bc3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4ceb3e6fff6dcdbf514cc1777f3b168f, findElement [using, value]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\MEGHALA\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50864}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50864/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4ceb3e6fff6dcdbf514cc1777f3b168f
+at org.testng.Assert.fail(Assert.java:111)
+at commonFunctions.RatingFilter.ratingFilter(RatingFilter.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
-              <![CDATA[Rating filter (above 4 stars) applied successfully.]]>
+              <![CDATA[Falied to apply rating filter.]]>
             </line>
           </reporter-output>
         </test-method> <!-- ratingFilter -->
-        <test-method is-config="true" signature="Search()[pri:0, instance:commonFunctions.RatingFilter@5fbe4146]" started-at="2025-06-18T16:57:28 IST" name="Search" finished-at="2025-06-18T16:57:28 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Search -->
       </class> <!-- commonFunctions.RatingFilter -->
       <class name="commonFunctions.PriceFilter">
-        <test-method is-config="true" signature="Search()[pri:0, instance:commonFunctions.PriceFilter@1e66f1f5]" started-at="2025-06-18T16:57:29 IST" name="Search" finished-at="2025-06-18T16:57:29 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="Search()[pri:0, instance:commonFunctions.PriceFilter@1e66f1f5]" started-at="2025-06-18T17:25:59 IST" name="Search" finished-at="2025-06-18T17:25:59 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Search -->
-        <test-method signature="priceFilter()[pri:2, instance:commonFunctions.PriceFilter@1e66f1f5]" started-at="2025-06-18T16:57:29 IST" name="priceFilter" finished-at="2025-06-18T16:57:31 IST" duration-ms="2236" status="PASS">
+        <test-method signature="priceFilter()[pri:2, instance:commonFunctions.PriceFilter@1e66f1f5]" started-at="2025-06-18T17:25:59 IST" name="priceFilter" finished-at="2025-06-18T17:25:59 IST" duration-ms="11" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Price filter failed to apply: Error communicating with the remote browser. It may have died.
+Build info: version: '4.24.0', revision: '748ffc9bc3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4ceb3e6fff6dcdbf514cc1777f3b168f, findElement [using, value]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\MEGHALA\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50864}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50864/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4ceb3e6fff6dcdbf514cc1777f3b168f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Price filter failed to apply: Error communicating with the remote browser. It may have died.
+Build info: version: '4.24.0', revision: '748ffc9bc3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4ceb3e6fff6dcdbf514cc1777f3b168f, findElement [using, value]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\MEGHALA\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50864}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50864/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4ceb3e6fff6dcdbf514cc1777f3b168f
+at org.testng.Assert.fail(Assert.java:111)
+at commonFunctions.PriceFilter.priceFilter(PriceFilter.java:50)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
-              <![CDATA[Price filter now applied Successfully; minimum price is 2000/-]]>
+              <![CDATA[Failed to apply price filter.]]>
             </line>
           </reporter-output>
         </test-method> <!-- priceFilter -->
       </class> <!-- commonFunctions.PriceFilter -->
       <class name="commonFunctions.BrandFilter">
-        <test-method is-config="true" signature="Search()[pri:0, instance:commonFunctions.BrandFilter@79d8407f]" started-at="2025-06-18T16:57:12 IST" name="Search" finished-at="2025-06-18T16:57:12 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="Search()[pri:0, instance:commonFunctions.BrandFilter@79d8407f]" started-at="2025-06-18T17:25:38 IST" name="Search" finished-at="2025-06-18T17:25:38 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Search -->
-        <test-method signature="brandFilter()[pri:1, instance:commonFunctions.BrandFilter@79d8407f]" started-at="2025-06-18T16:57:12 IST" name="brandFilter" finished-at="2025-06-18T16:57:28 IST" duration-ms="15542" status="PASS">
+        <test-method signature="brandFilter()[pri:1, instance:commonFunctions.BrandFilter@79d8407f]" started-at="2025-06-18T17:25:38 IST" name="brandFilter" finished-at="2025-06-18T17:25:59 IST" duration-ms="21575" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Brand filter failed for brand: Crocs - Error communicating with the remote browser. It may have died.
+Build info: version: '4.24.0', revision: '748ffc9bc3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4ceb3e6fff6dcdbf514cc1777f3b168f, findElement [using, value]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\MEGHALA\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50864}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50864/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4ceb3e6fff6dcdbf514cc1777f3b168f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Brand filter failed for brand: Crocs - Error communicating with the remote browser. It may have died.
+Build info: version: '4.24.0', revision: '748ffc9bc3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4ceb3e6fff6dcdbf514cc1777f3b168f, findElement [using, value]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.104, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\MEGHALA\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50864}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50864/devtoo..., se:cdpVersion: 137.0.7151.104, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4ceb3e6fff6dcdbf514cc1777f3b168f
+at org.testng.Assert.fail(Assert.java:111)
+at commonFunctions.BrandFilter.brandFilter(BrandFilter.java:67)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- brandFilter -->
       </class> <!-- commonFunctions.BrandFilter -->
       <class name="testRunner.Runner">
-        <test-method signature="kickStart()[pri:0, instance:testRunner.Runner@ba2f4ec]" started-at="2025-06-18T16:57:09 IST" name="kickStart" finished-at="2025-06-18T16:57:09 IST" duration-ms="7" status="PASS">
+        <test-method signature="kickStart()[pri:0, instance:testRunner.Runner@ba2f4ec]" started-at="2025-06-18T17:25:33 IST" name="kickStart" finished-at="2025-06-18T17:25:33 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- kickStart -->

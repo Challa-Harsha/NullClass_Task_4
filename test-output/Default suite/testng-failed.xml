@@ -11,41 +11,6 @@
           <include name="Search"/>
         </methods>
       </class> <!-- commonFunctions.BrandFilter -->
-      <class name="commonFunctions.Loginpage">
-        <methods>
-          <include name="setup"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- commonFunctions.Loginpage -->
-      <class name="commonFunctions.SearchProduct">
-        <methods>
-          <include name="setup"/>
-          <include name="searchProduct"/>
-          <include name="teardown"/>
-          <include name="Search"/>
-        </methods>
-      </class> <!-- commonFunctions.SearchProduct -->
-      <class name="testRunner.Runner">
-        <methods>
-          <include name="kickStart"/>
-        </methods>
-      </class> <!-- testRunner.Runner -->
-      <class name="commonFunctions.PriceFilter">
-        <methods>
-          <include name="priceFilter"/>
-          <include name="setup"/>
-          <include name="teardown"/>
-          <include name="Search"/>
-        </methods>
-      </class> <!-- commonFunctions.PriceFilter -->
-      <class name="commonFunctions.RatingFilter">
-        <methods>
-          <include name="setup"/>
-          <include name="ratingFilter"/>
-          <include name="teardown"/>
-          <include name="Search"/>
-        </methods>
-      </class> <!-- commonFunctions.RatingFilter -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

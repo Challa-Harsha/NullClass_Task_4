@@ -3,35 +3,30 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="commonFunctions.BrandFilter">
-        <methods>
-          <include name="setup"/>
-          <include name="teardown"/>
-          <include name="brandFilter"/>
-        </methods>
-      </class> <!-- commonFunctions.BrandFilter -->
-      <class name="commonFunctions.SearchProduct">
-        <methods>
-          <include name="setup"/>
-          <include name="Search"/>
-          <include name="searchProduct"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- commonFunctions.SearchProduct -->
       <class name="commonFunctions.RatingFilter">
         <methods>
           <include name="setup"/>
           <include name="ratingFilter"/>
           <include name="teardown"/>
+          <include name="Search"/>
         </methods>
       </class> <!-- commonFunctions.RatingFilter -->
       <class name="commonFunctions.PriceFilter">
         <methods>
-          <include name="setup"/>
           <include name="priceFilter"/>
+          <include name="setup"/>
           <include name="teardown"/>
+          <include name="Search"/>
         </methods>
       </class> <!-- commonFunctions.PriceFilter -->
+      <class name="commonFunctions.BrandFilter">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="brandFilter"/>
+          <include name="Search"/>
+        </methods>
+      </class> <!-- commonFunctions.BrandFilter -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
