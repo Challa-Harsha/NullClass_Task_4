@@ -8,9 +8,45 @@
           <include name="setup"/>
           <include name="teardown"/>
           <include name="brandFilter"/>
-          <include name="Search"/>
         </methods>
       </class> <!-- commonFunctions.BrandFilter -->
+      <class name="commonFunctions.RatingFilter">
+        <methods>
+          <include name="setup"/>
+          <include name="ratingFilter"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- commonFunctions.RatingFilter -->
+      <class name="testRunner.Runner">
+        <methods>
+          <include name="kickStart"/>
+        </methods>
+      </class> <!-- testRunner.Runner -->
+      <class name="commonFunctions.SearchProduct">
+        <methods>
+          <include name="setup"/>
+          <include name="searchProduct"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- commonFunctions.SearchProduct -->
+      <class name="commonFunctions.Loginpage">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- commonFunctions.Loginpage -->
+      <class name="commonFunctions.PriceFilter">
+        <methods>
+          <include name="setup"/>
+          <include name="priceFilter"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- commonFunctions.PriceFilter -->
+      <class name="commonFunctions.SetTime">
+        <methods>
+          <include name="timeSearch"/>
+        </methods>
+      </class> <!-- commonFunctions.SetTime -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

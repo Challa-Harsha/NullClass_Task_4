@@ -11,8 +11,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.SkipException;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
 import commonFunctions.Loginpage;
@@ -54,19 +56,6 @@ public class AppUtil {
 			login.validate();
 		} else {
 			org.testng.Reporter.log("Browser value is not matching");
-		}
-	}
-
-	@BeforeClass
-	public void Search() {
-
-		LocalTime now = LocalTime.now();
-		LocalTime startTime = LocalTime.of(15, 0); // 3:00 PM
-		LocalTime endTime = LocalTime.of(18, 0);// 6:00 PM
-
-		if (now.isBefore(startTime) || now.isAfter(endTime)) {
-			System.out.println("Outside testing windows (3 PM - 6 PM).Test will not run");
-			return;
 		}
 	}
 

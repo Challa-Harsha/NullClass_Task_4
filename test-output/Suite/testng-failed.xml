@@ -3,6 +3,14 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="commonFunctions.SearchProduct">
+        <methods>
+          <include name="setup"/>
+          <include name="searchProduct"/>
+          <include name="teardown"/>
+          <include name="Search"/>
+        </methods>
+      </class> <!-- commonFunctions.SearchProduct -->
       <class name="commonFunctions.RatingFilter">
         <methods>
           <include name="setup"/>
